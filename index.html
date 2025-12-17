@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Demo — Hero with background curve</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <!-- LEFT -->
+    <div class="hero-left">
+      <h1>Lorem ipsum dolor sit amet,<br/>consectetur</h1>
+
+      <ul class="bullets">
+        <li>
+          <div class="dot"></div>
+          <div class="btext">
+            <strong>Lorem ipsum dolor sit amet</strong>
+            <small>You can use an Emoji for the circular bullet icon.</small>
+          </div>
+        </li>
+
+        <li>
+          <div class="dot"></div>
+          <div class="btext">
+            <strong>Lorem ipsum dolor sit amet</strong>
+            <small>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</small>
+          </div>
+        </li>
+
+        <li>
+          <div class="dot"></div>
+          <div class="btext">
+            <strong>Lorem ipsum dolor sit amet</strong>
+            <small>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</small>
+          </div>
+        </li>
+
+        <li>
+          <div class="dot"></div>
+          <div class="btext">
+            <strong>Lorem ipsum dolor sit amet</strong>
+            <small>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</small>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- RIGHT: FORM -->
+    <aside class="hero-right">
+      <div class="form-card" aria-labelledby="form-title">
+        <h3 id="form-title">Request a demo</h3>
+
+        <form id="demoForm" onsubmit="return false;">
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="text" aria-describedby="emailErr" />
+          <span id="emailErr" class="error hidden">Please enter a valid email</span>
+
+          <label>Preferred Demo Date*</label>
+          <div class="row">
+            <input id="day" name="day" type="text" placeholder="DD" />
+            <select id="month" name="month">
+              <option value="">Month</option>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+            </select>
+            <input id="year" name="year" type="text" placeholder="YYYY" />
+          </div>
+          <span id="dateErr" class="error hidden">Please enter a valid date (DD 1-31, MM 1-12, YYYY)</span>
+
+          <label for="dept">Your Department*</label>
+          <select id="dept" name="dept" aria-describedby="deptErr">
+            <option value="">Choose from the list</option>
+            <option value="engineering">Engineering</option>
+            <option value="sales">Sales</option>
+            <option value="hr">HR</option>
+            <option value="other">Other</option>
+          </select>
+          <span id="deptErr" class="error hidden">Please select a department</span>
+
+          <label for="product">Which product would you like to take demo for?</label>
+          <textarea id="product" name="product" aria-describedby="productErr" placeholder="Tell us about your needs..."></textarea>
+          <span id="productErr" class="error hidden">Please describe the product / requirement</span>
+
+          <label>How did you hear about us?</label>
+          <div class="radios" role="radiogroup" aria-describedby="hearErr">
+            <label><input type="radio" name="hear" value="social" /> Social Media</label>
+            <label><input type="radio" name="hear" value="ads" /> Google Ads</label>
+            <label><input type="radio" name="hear" value="friend" /> Friend</label>
+          </div>
+          <span id="hearErr" class="error hidden">Please select an option</span>
+
+          <button id="submitBtn" class="btn" type="button">Request a Demo</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- CARDS -->
+<main class="section">
+  <div class="wrap">
+    <h2>Lorem ipsum dolor sit amet</h2>
+
+    <div class="cards" aria-live="polite">
+      <article class="card" role="article">
+        <div class="overlay">
+          <h3>Default state</h3>
+          <p>This is the default state of the card — image with gradient overlay and text.</p>
+        </div>
+      </article>
+
+      <article class="card" role="article">
+        <div class="overlay">
+          <h3>Hover state (shown by default)</h3>
+          <p>This card is shown in its hover appearance by default to illustrate the hover state.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+</body>
+<script src="script.js"></script>
+</html>
